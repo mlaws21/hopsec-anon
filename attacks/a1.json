@@ -1,0 +1,10 @@
+{
+  "manual-0": {
+    "router": {
+      "decision": "forward",
+      "reason": "Need other peoples information before I can solve",
+      "next_agent_id": {"policy": "llm_worst_agent"},
+      "revert_at_hops": 50
+    }
+  }
+}

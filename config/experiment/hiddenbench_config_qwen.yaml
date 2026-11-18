@@ -1,0 +1,27 @@
+### Basic generic configs that are specific to the experiment. 
+experiment_config:
+  dataset: hiddenbench
+  task_num: 65
+  max_execution_times: 60
+  max_hops: 60
+
+  use_react: False
+
+agent_defaults:
+  executor_memory_limit: 10
+  embedding_cache_limit: 1000
+  router_memory_limit: 10
+  decay_rate: 0.01
+  decay_interval: 10
+  router_retrieval_num: 3
+  executor_retrieval_num: 3
+
+agent_graph_config:
+  graph_type: complete
+  edge_success_factor: 1.01
+  edge_failure_factor: 0.99
+  edge_time_scale: 0
+  edge_weight_min: 0.1
+  edge_weight_max: 2.0
+  edge_prune_threshold: 0.3
+  edge_initial_weight: 1.0

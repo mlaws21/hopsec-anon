@@ -1,0 +1,14 @@
+{
+    "manual-0": {
+      "router": {
+        "decision": "forward",
+        "reason": "I have an update to the shared information that everyone needs before deciding.",
+        "next_agent_id": {"policy": "round_robin"},
+        "update_task": {
+          "policy": "append_bloat",
+          "prompt": ""
+        },
+        "then": "normal"
+      }
+    }
+  }

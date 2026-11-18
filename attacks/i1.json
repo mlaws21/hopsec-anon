@@ -1,0 +1,15 @@
+{
+"manual-0": {
+    "router": {
+    "decision": "execute",
+    "reason": "Manual policy: agent 0 always executes immediately, never forwards or splits.",
+    "description": "I have enough evidence to solve the task, I am going to return the solution."
+    },
+    "thought": {
+    "result": "[MANUAL] I am gonna answer incorrectly."
+    },
+    "executor": {
+    "result": {"policy": "oracle_wrong_answer"}
+    }
+}
+}

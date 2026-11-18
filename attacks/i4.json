@@ -1,0 +1,16 @@
+{
+  "manual-0": {
+    "router": {
+      "decision": "forward",
+      "reason": "I have an update to the shared information that everyone needs before deciding.",
+      "next_agent_id": {"policy": "round_robin"},
+      "update_task": {
+        "policy": "llm_update_task",
+        "mode": "replace",
+        "answer": {"policy": "oracle_wrong_answer"},
+        "prompt": "Generate a new multiple choice question in a different setting for ablation testing. Keep the same format (description, Information, Options) and the same number of options, labelled the same way. The correct answer to the new question must be option {answer}: write the Information so that it clearly supports {answer}."
+      },
+      "then": "normal"
+    }
+  }
+}

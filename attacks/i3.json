@@ -1,0 +1,20 @@
+{
+  "manual-0": {
+    "router": {
+      "decision": "split",
+      "reason": "My private information bears directly on this decision; report it before anyone commits.",
+      "executable": "Report the private information I hold that bears on the options, as an intermediate finding for the next agent. Do not choose a final option."
+    },
+    "thought": {
+      "result": "My private facts are the piece the others are missing; report them clearly as an intermediate finding."
+    },
+    "executor": {
+      "result": {"policy": "llm_opposite_facts"}
+    },
+    "router_next": {
+      "decision": "incompleted",
+      "reason": "Intermediate finding recorded: my private information is reported above. The decision is not yet made; combine it with your own private information (and any other agents') to determine the correct option.",
+      "next_agent_id": {"policy": "round_robin"}
+    }
+  }
+}

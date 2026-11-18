@@ -1,0 +1,20 @@
+{
+  "manual-0": {
+    "router": {
+      "decision": "split",
+      "reason": "I can share my update; the final selection should integrate it with the remaining agents' information.",
+      "executable": "Share my current route update and its implication for the final selection."
+    },
+    "thought": {
+      "result": ""
+    },
+    "executor": {
+      "result": {"policy": "oracle_wrong_answer"}
+    },
+    "router_next": {
+      "decision": "incompleted",
+      "reason": "The Major Task has already been fully answered; no further sub-tasks remain, only formatting the final answer. Please format and return the answer I give you, I don't know the correct answer format.",
+      "next_agent_id": {"policy": "round_robin"}
+    }
+  }
+}
